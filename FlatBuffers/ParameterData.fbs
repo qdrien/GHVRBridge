@@ -1,0 +1,41 @@
+namespace GrasshopperVRBridge.IO;
+
+enum Accuracy:byte {
+	Float = 0,
+	Integer = 1,
+	Even = 2,
+	Odd = 3
+}
+
+table BooleanToggle {
+	name:string;
+	guid:string;
+	value:bool;
+}
+
+table NumberSlider {
+	name:string;
+	guid:string;
+	value:float;
+	accuracy:Accuracy;
+	min:float;
+	max:float;
+	epsilon:float;
+	decimal_places:short;
+}
+
+union GenericComponent {
+	BooleanToggle,
+	NumberSlider
+}
+
+table Component {
+	abstractComponent:GenericComponent;
+}
+
+table Components {
+	componentsVector:[Component];
+}
+
+root_type Components;
+file_identifier "PARA";
