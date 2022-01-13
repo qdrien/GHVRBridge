@@ -17,17 +17,8 @@ The project and its attached examples are currently set up for local single-clie
 
 ## Usage
 
-1. z
-
-2. a
-
-3. a
-
-
-## Dependencies
-
-
+See guide.pdf (or .docx) for brief explanations on how to use the project (text available in french only at the moment).
 
 ## Acknowledgments
 
-https://github.com/jhorikawa/MeshStreamingGrasshopper
+Initial idea partly based on: https://github.com/jhorikawa/MeshStreamingGrasshopper
